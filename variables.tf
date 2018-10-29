@@ -3,6 +3,7 @@ variable "s3_region" {
   default = "us-east-1"
 }
 
-data "aws_ami" "ubuntu" {
-  most_recent = true
+variable "ami_instance" {
+  type    = "string"
+  default = "ami-0ac019f4fcb7cb7e6"
 }
