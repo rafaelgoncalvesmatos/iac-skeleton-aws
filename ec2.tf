@@ -8,6 +8,7 @@ resource "aws_instance" "web" {
   key_name      = "ghost"
 
   tags {
-    Name = "Ubuntu"
+    Name  = "Ubuntu"
+    Type  = "Skeleton"
   }
 }
